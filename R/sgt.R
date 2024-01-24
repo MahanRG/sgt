@@ -105,7 +105,7 @@ f_sgt_parts_using_alphabet_positions <- function(seq_alphabet_positions, alphabe
   iter_set <- c(0, kappa)
   
   alphabet_set_size <- length(alphabet_set)
-  for(m in iter_set)
+  for(m in iter_set[1]:iter_set[2])
   {
     mat_Lm           <- matrix(rep(0,alphabet_set_size*alphabet_set_size), nrow=alphabet_set_size)
     rownames(mat_Lm) <- colnames(mat_Lm) <- alphabet_set
